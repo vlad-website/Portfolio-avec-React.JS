@@ -1,0 +1,33 @@
+.services-hero {
+    position: relative;
+    width: 100%;
+    background: url("/public/img/banner.jpg") no-repeat center center/cover;
+    height: 200px;
+}
+
+.title-line-services {
+    width: 500px;
+    height: 4px;
+    background-color: #0d6efd;
+    border-radius: 2px;
+}
+
+.service-card {
+    transition: all 0.3s ease;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.service-card:hover {
+    background-color: #efefef;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.service-card i {
+    transition: color 0.3s ease;
+}
+
+.service-card:hover i {
+    color: #0b5ed7;
+}

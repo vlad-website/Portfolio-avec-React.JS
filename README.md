@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# Portfolio - Vladyslav Kharkovskyi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet a été réalisé dans le cadre de la formation de Développeur Web au Centre Européen de Formation (CEF).  
+Il s’agit d’un portfolio personnel développé avec React.js et Bootstrap, permettant à John Doe de présenter son profil, ses compétences, ses services, ses réalisations et ses coordonnées professionnelles.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Objectifs du projet
 
-### `npm start`
+- Créer un site web professionnel présentant le profil d’un futur développeur web.  
+- Appliquer les connaissances acquises sur React.js et Bootstrap 5.  
+- Mettre en place un routage dynamique via React Router.  
+- Assurer la responsivité du site sur tous les supports (mobile, tablette, desktop).  
+- Utiliser des composants réutilisables et un code conforme aux normes du W3C.  
+- Intégrer une modale GitHub connectée à l’API publique de GitHub.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Structure du site
 
-### `npm test`
+Le site est composé de 5 pages principales, accessibles depuis la barre de navigation :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Page | Description |
+|------|--------------|
+| Accueil | Présentation générale et compétences (avec barres de progression Bootstrap). |
+| Services | Liste des prestations sous forme de cartes avec effets au survol. |
+| Portfolio | Présentation de 6 réalisations sous forme de cartes responsives. |
+| Contact | Formulaire complet + coordonnées et carte Google Maps intégrée. |
+| Mentions légales | Informations légales sous forme d’accordéon Bootstrap. |
 
-### `npm run build`
+Le site contient également :
+- un Header (logo et menu de navigation),
+- un Footer présent sur toutes les pages (coordonnées, liens utiles, réalisations récentes),
+- une Modale GitHub accessible depuis la page d’accueil.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Prérequis
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Avant de lancer le projet, vous devez avoir installé :
 
-### `npm run eject`
+- [Node.js](https://nodejs.org/) (version 16 ou supérieure)  
+- [npm](https://www.npmjs.com/) (fourni avec Node)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation du projet
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Cloner le dépôt GitHub :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   git clone https://github.com/votre-nom-utilisateur/portfolio-react.git
+Accéder au dossier du projet :
+cd portfolio-react
 
-## Learn More
+Installer les dépendances :
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Lancer le projet en mode développement :
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Ouvrez http://localhost:3000 dans votre navigateur pour voir le site.
 
-### Code Splitting
+Technologies utilisées
+React.js — bibliothèque JavaScript pour construire des interfaces dynamiques.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+React Router DOM — gestion du routage entre les pages.
 
-### Analyzing the Bundle Size
+Bootstrap 5 — framework CSS pour la mise en page et les composants.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+CSS personnalisé — ajustements graphiques et effets de transition.
 
-### Making a Progressive Web App
+API GitHub — récupération des informations du profil GitHub de John Doe via fetch().
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Structure du code
 
-### Advanced Configuration
+portfolio-react/
+│
+├── public/
+│   ├── images/            # Images du site (portfolio, hero, etc.)
+│   ├── favicon.ico        # Favicon du site
+│   └── index.html         # Page HTML principale
+│
+├── src/
+│   ├── components/        # Composants réutilisables (Header, Footer, ModalGithub)
+│   ├── pages/             # Pages du site (Home, Services, Portfolio, Contact, Mentions)
+│   ├── App.js             # Composant principal avec le router
+│   ├── App.css            # Feuille de style principale
+│   └── index.js           # Point d'entrée du projet React
+│
+└── package.json           # Configuration du projet et dépendances
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+ Fonctionnalités principales:
+ Navigation fluide entre les pages via React Router.
+ Sections responsives basées sur la grille Bootstrap.
+ Effets au survol sur les cartes et les boutons.
+ Modale GitHub avec animation et fond semi-transparent.
+ Formulaire de contact complet avec validation de champs.
+ Page Mentions légales non indexée par les moteurs de recherche.
+ Footer cohérent sur toutes les pages.
 
-### Deployment
+Validation du code:
+Le code HTML et CSS a été vérifié via les validateurs W3C :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+W3C HTML Validator
 
-### `npm run build` fails to minify
+W3C CSS Validator
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Le projet respecte les bonnes pratiques de structure et de sémantique.
+
+Auteur
+Vladyslav Kharkovskyi
+Étudiant Développeur Web – Centre Européen de Formation
+ vlad.website33@gmail.com
+ Lyon, France
+ Profil GitHub

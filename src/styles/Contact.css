@@ -1,0 +1,47 @@
+/* Contact Page */
+form input,
+form textarea {
+    border-radius: 4px;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.title-line-contact {
+    width: 500px;
+    height: 4px;
+    background-color: #0d6efd;
+    border-radius: 2px;
+}
+
+.line-form {
+    border-bottom: 3px solid #0d6efd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Button */
+form .btn-primary:hover {
+    background-color: #3d8bfd;
+}
+
+button.btn.btn-primary {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Card */
+.card {
+    border-radius: 8px;
+}
+
+
+/* Map */
+.ratio iframe {
+    border-radius: 4px;
+}
